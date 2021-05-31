@@ -37,7 +37,7 @@ class FetchJeepTest extends FetchJeepTestSupport {
 		//Given: a valid model, trim and URI
 		JeepModel model = JeepModel.WRANGLER;
 		String trim = "Sport";
-		String uri = String.format("%s?model=%s&trim=%s", getBaseUri(), model, trim);
+		String uri = String.format("%s?model=%s&trim=%s", getBaseUriForJeeps(), model, trim);
 		
 		//When: a connection is made to the URI
 		
